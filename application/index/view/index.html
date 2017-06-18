@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="__CSS__/index.css" rel="stylesheet">
+</head>
+<body>
+    index-index-index
+<h1 class="a">Apedffdfd</h1>{$g}
+    {:date('Y-m-d H:i:s');}<br>
+    {$tt|default="gg"}
+    {$g|default='gg'}
+    {include file="include "}
+
+    {block name='body'}{/block}
+
+    <div class="left">
+        <h2>Foreach &amp; if example</h2>
+        {comment}
+        这是注释
+        {/comment}
+        {if $array}
+        {foreach $array as $key => $value}
+        {$key} => {$value}<br />
+        {/foreach}
+        {else}
+        {/*}这也是注释{*/}
+        <p>Array is empty!</p>
+        {/if}
+    </div>
+    <div class="left">
+        <h2>While example</h2>
+        {$i = 1}
+        {while $i < $j}
+        显示 no. {$i}<br />
+        {$i++}
+        {/while}
+    </div>
+
+</body>
+</html>
